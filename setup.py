@@ -50,7 +50,7 @@ setup(
     #
     # Distribution details, dependencies, ...
     packages=find_packages(exclude=["tests.*", "tests"]),
-    install_requires=install_deps
+    install_requires=install_deps,
     tests_require=test_deps,
     test_suite='py.test',
     extras_require=dict(test_deps=test_deps)
