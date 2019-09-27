@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 # Dependency lists ............................................................
 install_deps = []
-test_deps = []
+test_deps = ['pytest>=3.4', 'pytest-cov>=2.5.1', 'tox>=3.1.2']
 
 # .............................................................................
 
@@ -51,7 +51,7 @@ setup(
     # Distribution details, dependencies, ...
     packages=find_packages(exclude=["tests.*", "tests"]),
     install_requires=install_deps
-    #tests_require=test_deps,
-    #test_suite='py.test',
-    #extras_require=dict(test_deps=test_deps)
+    tests_require=test_deps,
+    test_suite='py.test',
+    extras_require=dict(test_deps=test_deps)
 )
