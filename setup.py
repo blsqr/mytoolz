@@ -31,7 +31,7 @@ def find_version(*file_paths) -> str:
 setup(
     name='mytoolz',
     #
-    # Set the version from dantro.__version__
+    # Set the version from mytoolz.__version__
     version=find_version('mytoolz', '__init__.py'),
     #
     # Project info
