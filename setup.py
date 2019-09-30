@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 # Dependency lists ............................................................
 install_deps = []
-test_deps = []
+test_deps = ['pytest>=3.4', 'pytest-cov>=2.5.1', 'tox>=3.1.2']
 
 # .............................................................................
 
@@ -31,7 +31,7 @@ def find_version(*file_paths) -> str:
 setup(
     name='mytoolz',
     #
-    # Set the version from dantro.__version__
+    # Set the version from mytoolz.__version__
     version=find_version('mytoolz', '__init__.py'),
     #
     # Project info
@@ -50,8 +50,8 @@ setup(
     #
     # Distribution details, dependencies, ...
     packages=find_packages(exclude=["tests.*", "tests"]),
-    install_requires=install_deps
-    #tests_require=test_deps,
-    #test_suite='py.test',
-    #extras_require=dict(test_deps=test_deps)
+    install_requires=install_deps,
+    tests_require=test_deps,
+    test_suite='py.test',
+    extras_require=dict(test_deps=test_deps)
 )
