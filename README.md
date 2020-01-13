@@ -1,6 +1,6 @@
 # The `mytoolz` Package
 
-_Note: This is a dummy project for the SIAM Tools Seminar!_
+_Note: This is a dummy project for use in git workshops! It has no actual functionality._
 
 `mytoolz` is a Python 3 package that contains some useful tools for my everyday work.
 
