@@ -2,6 +2,8 @@
 
 _Note: This is a dummy project for use in git workshops! It has no actual functionality._
 
+Today is a very good day. :)
+
 `mytoolz` is a Python 3 package that contains some useful tools for my everyday work.
 
 To assert that the tools work as they should, it contains a testing framework.
