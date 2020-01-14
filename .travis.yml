@@ -1,0 +1,17 @@
+# A Travis CI configuration file
+---
+# Select language and versions
+language: python
+python:
+- 3.6
+- 3.7
+- 3.8
+
+# Specify package installation commands
+install:
+  # Install the package including the test-dependencies
+  - pip install .[test_deps]
+
+# Specify pytest-based test commands
+script:
+  - python -m pytest -v test/ --cov=mytoolz --cov-report=term-missing

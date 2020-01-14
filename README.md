@@ -1,3 +1,5 @@
+![TravisCI build status](https://travis-ci.com/blsqr/mytoolz.svg?branch=master)
+
 # The `mytoolz` Package
 
 _Note: This is a dummy project for use in git workshops! It has no actual functionality._
